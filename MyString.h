@@ -7,6 +7,8 @@
 #define _MY_STING_H_
 
 #define NULL 0
+#define ONE 1
+#define MINUS_ONE -1
 #define END 29
 
 typedef unsigned int size_t;
