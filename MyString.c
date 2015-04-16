@@ -157,7 +157,31 @@ int mystrcmp(const char* str1, const char* str2)
 int mystrncmp(const char* str1, const char* str2, size_t n)
 {
 	// size becomes eqal to least of numbers n, mystrlen(str1), mystrlen(str2)
-	size_t size = mystrlen(str1) < mystrlen(str2) ? mystrlen(str1) < n ? mystrlen(str1) : n : mystrlen(str2) < n ? mystrlen(str2) : n;
+	size_t size;
+	size_t size1 = mystrlen(str1);
+	size_t size2 = mystrlen(str2);
+	if (size1 < size2)
+	{
+		if (size1 < n)
+		{
+			size = size1;
+		}
+		else
+		{
+			size = n;
+		}
+	}
+	else
+	{
+		if (size2 < n)
+		{
+			size = size2;
+		}
+		else
+		{
+			size = n;
+		}
+	}
 	while (size--)
 	{
 		if (*str1 == *str2)
