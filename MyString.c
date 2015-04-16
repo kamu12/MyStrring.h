@@ -34,14 +34,14 @@ int mymemcmp(const void* str1, const void* str2, size_t n)
 		}
 		else if (*string1 > *string2)
 		{
-			return 1;
+			return ONE;
 		}
 		else
 		{
-			return -1;
+			return MINUS_ONE;
 		}
 	}
-	return 0;
+	return NULL;
 }
 
 void* mymemcpy(void* dest, const void* src, size_t n)
@@ -191,13 +191,15 @@ int mystrncmp(const char* str1, const char* str2, size_t n)
 		}
 		else if (*str1 > *str2)
 		{
-			return 1;
+			return ONE;
 		}
 		else
 		{
-			return -1;
+			return MINUS_ONE;
 		}
 	}
+	
+	return NULL;
 }
 
 char* mystrcpy(char* dest, const char* src)
