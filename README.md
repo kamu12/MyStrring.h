@@ -1,0 +1,1 @@
+# MyStrring.h
