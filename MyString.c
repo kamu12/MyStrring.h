@@ -68,8 +68,8 @@ void* mymemmove(void* dest, const void* src, size_t n)
 	}
 	else
 	{
-		source += n;
-		destination += n;
+		source += n - 1;
+		destination += n - 1;
 		while (n--)
 		{
 			*destination-- = *source--;
