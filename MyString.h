@@ -30,7 +30,7 @@ void* mymemcpy(void* dest, const void* src, size_t n);
 /*
 *@brief	Move block of memory
 */
-void* mymymemmove(void* dest, const void* src, size_t n);
+void* mymemmove(void* dest, const void* src, size_t n);
 
 /*
 *@brief	Copies the character c (an unsigned char) to the first n characters of
