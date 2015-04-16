@@ -188,7 +188,6 @@ int mystrncmp(const char* str1, const char* str2, size_t n)
 		{
 			str1++;
 			str2++;
-			continue;
 		}
 		else if (*str1 > *str2)
 		{
